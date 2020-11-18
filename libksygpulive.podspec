@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'libksygpulive'
-  s.version      = '3.0.4'
+  s.version      = '3.0.6'
   s.license      = {
 :type => 'Proprietary',
 :text => <<-LICENSE
@@ -74,7 +74,7 @@ Pod::Spec.new do |s|
     sub.vendored_library = ['prebuilt/libs/libksyplayer.a',
                             'prebuilt/libs/libksystreamerengine.a',
                             'prebuilt/libs/libksygpufilter.a'];
-    sub.dependency 'GPUImage'
+    sub.dependency 'GPUImage-flow'
     sub.dependency '%s/streamerbase' % s.name
   end
   s.subspec 'libksygpulive_noKit' do |sub|
@@ -83,7 +83,7 @@ Pod::Spec.new do |s|
     sub.vendored_library = ['prebuilt/libs/libksyplayer.a',
                             'prebuilt/libs/libksystreamerengine.a',
                             'prebuilt/libs/libksygpufilter.a'];
-    sub.dependency 'GPUImage'
+    sub.dependency 'GPUImage-flow'
     sub.dependency '%s/streamerbase' % s.name
   end
   s.subspec 'streamerbase_265' do |sub|
@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
     sub.vendored_library = ['prebuilt/libs/libksyplayer.a',
                             'prebuilt/libs/libksystreamerengine.a',
                             'prebuilt/libs/libksygpufilter.a'];
-    sub.dependency 'GPUImage'
+    sub.dependency 'GPUImage-flow'
     sub.dependency '%s/streamerbase_265' % s.name
   end
   s.subspec 'KSYGPUResource' do |sub|
